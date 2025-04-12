@@ -64,6 +64,7 @@ jobs:
           name: dist-files
           path: dist
   deploy:
+    if: always()
     needs: build
     runs-on: ubuntu-latest
     steps:
